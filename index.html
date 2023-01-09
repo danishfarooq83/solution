@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Nav -->
+        <nav class="navbar bg-body-tertiary mb-2">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Solution table</a>
+            </div>
+        </nav>
+
+        <section>
+            <form id="my-form">
+                <div class="row g-3 mb-3">
+                    <div class="col">
+                        <input id="people" type="number" name="people" min="0" max="10000" required autofocus class="form-control"
+                            placeholder="Numer of people" aria-label="First name">
+                    </div>
+                    <div class="col">
+                        <input id="buses" type="number" name="bues" min="0" max="1000" required class="form-control"
+                            placeholder="Number of buses" aria-label="Last name">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </section>
+
+        <section id="bus-list" class="">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Bus number</th>
+                        <th>Passengers per bus</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                   
+                </tbody>
+            </table>
+        </section>
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+    <!-- <script src="./solution.js"></script> -->
+</body>
+
+</html>
